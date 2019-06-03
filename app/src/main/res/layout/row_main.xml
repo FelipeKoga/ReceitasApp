@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                                             android:layout_height="match_parent">
+
+    <TextView
+            android:text="Receita:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/receita_textView" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="8dp" android:layout_marginStart="8dp" android:textStyle="bold"
+            android:textSize="18sp"/>
+    <TextView
+            android:text="Carne (gramas):"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/c_textView"
+            app:layout_constraintTop_toBottomOf="@+id/receita_textView" app:layout_constraintStart_toStartOf="@+id/receita_textView"
+            android:layout_marginLeft="8dp" android:layout_marginStart="8dp"/>
+    <TextView
+            android:layout_width="55dp"
+            android:layout_height="20dp"
+            android:id="@+id/carne_textView" app:layout_constraintStart_toEndOf="@+id/c_textView"
+            android:layout_marginTop="32dp"
+            app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+            android:text="Farinha (xícaras):"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@+id/receita_textView" android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp" android:id="@+id/f_textView"
+            app:layout_constraintTop_toBottomOf="@+id/c_textView" android:layout_marginTop="16dp"/>
+    <TextView
+            android:layout_width="62dp"
+            android:layout_height="19dp"
+            android:id="@+id/farinha_textView" app:layout_constraintStart_toEndOf="@+id/f_textView"
+            android:layout_marginTop="16dp" app:layout_constraintTop_toBottomOf="@+id/carne_textView"/>
+    <TextView
+            android:text="Ovos (unidades):"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/o_textView" app:layout_constraintStart_toEndOf="@+id/carne_textView"
+            android:layout_marginLeft="32dp" android:layout_marginStart="32dp" android:layout_marginTop="32dp"
+            app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+            android:layout_width="45dp"
+            android:layout_height="20dp"
+            android:id="@+id/ovos_textView"
+            app:layout_constraintStart_toEndOf="@+id/o_textView"
+            android:layout_marginTop="32dp" app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+            android:text="Leite (xícaras):"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/l_textView"
+            app:layout_constraintTop_toBottomOf="@+id/o_textView"
+            app:layout_constraintStart_toEndOf="@+id/farinha_textView" android:layout_marginLeft="24dp"
+            android:layout_marginStart="24dp" android:layout_marginTop="16dp"/>
+    <TextView
+            android:layout_width="31dp"
+            android:layout_height="20dp"
+            android:id="@+id/leite_textView" app:layout_constraintStart_toEndOf="@+id/l_textView"
+            app:layout_constraintTop_toBottomOf="@+id/ovos_textView" android:layout_marginTop="16dp"
+    />
+</android.support.constraint.ConstraintLayout>
